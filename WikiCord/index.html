@@ -10,17 +10,17 @@
 	<body>
 		<nav id="server-meny">
 			<div id="nav-top">
-				<a href="#private-messages"><img src="images/private-messages.png" width="64" height="64" alt="Личные сообщения"></a>
+				<a href="#private-messages" class="left-server-meny"><img src="images/private-messages.png" width="64" height="64" alt="Личные сообщения"></a>
 				<div id="servers">
-					<a href="#server-1"><img src="images/server-1.ico" width="64" height="64" alt="Сервер 1"></a>
-					<a href="#server-2"><img src="images/server-2.webp" width="64" height="64" alt="Сервер 2"></a>
+					<a href="#server-1" class="left-server-meny"><img src="images/server-1.ico" width="64" height="64" alt="Сервер 1"></a>
+					<a href="#server-2" class="left-server-meny"><img src="images/server-2.webp" width="64" height="64" alt="Сервер 2"></a>
 				</div>
 				<div id="servers-managements">
-					<a href="#add-server"><img src="images/add-server.png" width="64" height="64" alt="Добавить сервер"></a>
-					<a href="#explore"><img src="images/explore.png" width="64" height="64" alt="Исследовать сервера"></a>
+					<a href="#add-server" class="left-server-meny"><img src="images/add-server.png" width="64" height="64" alt="Добавить сервер"></a>
+					<a href="#explore" class="left-server-meny"><img src="images/explore.png" width="64" height="64" alt="Исследовать сервера"></a>
 				</div>
 			</div>
-			<a href="#my-profile"><img src="images/useravatar.png" width="64" height="64" alt="Мой профиль"></a>
+			<a href="#my-profile" class="left-server-meny"><img src="images/useravatar.png" width="64" height="64" alt="Мой профиль"></a>
 		</nav>
 	</div>
 		<nav id="channels-panel">
@@ -34,21 +34,23 @@
 				</div>
 			</div>
 		</nav>
+		<button class="panel-toggle" id="left-panel-toggle">=</button>
 		<div id="chat">
 			<div id="messages">
 				<div class="message">
 						<a href="#userprofile-Антаркт"><img src="images/useravatar.png" width="64" height="64" alt="Антаркт"></a>
 						<div class="message-body">
 							<a href="#userprofile-Антаркт" class="userprofilelink userprofilelink-antarkt">Антаркт</a>
-							<p>Ребят, смотрите, какой крутой инфобокс я сделал.</p>
+							<p>Посмотрим, сколько буквовок влезут в это сообщеееееееее еееееееееееееееее еееееееееееееееее ееееееееееееееееееее ееееееееееееееееееее ееееееееееееееееее еееееееееееееееееееееее еееееееееееееееееееееееееееееееее еееееееееееееееееееееееееееееееее ееееееееееееееееееееееееееееее ееееееееееееееееееееееее еееееееееееееееее еееееееееееееееение
+							</p>
 						</div>
 					<a href="#message-management-meny-link" class="message-management-meny-link">...</a>
-					<!--<ul class="message-management-meny">
+					<ul class="message-management-meny">
 						<li>Редактировать</li>
 						<li>Ответить</li>
 						<li color="red">Удалить</li>
 						<li>Просмотреть историю</li>
-					</ul>-->
+					</ul>
 				</div>
 			</div>
 			<textarea class="editor"></textarea>
@@ -81,6 +83,7 @@
 					</div>
 				</div>
 			</div>
+			<button class="panel-toggle" id="right-panel-toggle">=</button>
 		</div>
 		<script src="index.js">
 		</script>
