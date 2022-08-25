@@ -1,0 +1,101 @@
+main {
+    width: 600px;
+    border-radius: 12px;
+    background-color: #18191c;
+    color: rgba(151, 129, 129, 0.884);
+    height: 900px;
+}
+
+header {
+    background-image: url(https://vignette.wikia.nocookie.net/darkest-dungeon-2/images/9/9c/Баннер.jpg/revision/latest/scale-to-width-down/600?cb=20220801122125&path-prefix=ru);
+    height: 300px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    width: 600px;
+}
+#avatar {
+    position: relative;
+    top: 250px;
+    left: 25px;
+}
+#other {
+    position: relative;
+    top: 80px;
+    left: 25px;
+    width: 90%;
+}
+#send-message {
+    position: relative;
+    bottom: 80px;
+    left: 390px;
+    border-radius: 4px;
+    background:#202225;
+    color: #fff;
+    height: 30px;
+    width: 175px;
+}
+#username {
+    position: relative;
+    left: 10px;
+}
+#username-2 {
+    font-weight: 600;
+    font-size: 20px;
+}
+#tag {
+    opacity: 0.6;
+    font-size: 16px;
+}
+#status {
+    position: relative;
+    bottom: 20px;
+}
+#spotify-1 {
+    margin:0px;
+    font-size:12px;
+    padding-bottom:15px;
+    font-weight:700;
+}
+#spotify-2 {
+    display: flex;
+}
+#spotify-2 img {
+    width: 100px;
+    height: 100px;
+}
+#spotify-2 img, #central-spotify, #listen-togeser {
+    margin-right: 20px;
+}
+#listen-togeser {
+    border-radius: 4px;
+    background:#202225;
+    color: #fff;
+    height: 30px;
+    width: 175px;
+    position: relative;
+    top: 20px;
+}
+#description {
+    position: relative;
+    top: 10px;
+}
+#subdescription {
+    position: relative;
+    top: 10px;
+    display: flex;
+}
+#buttons {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 50px;
+}
+#buttons button {
+    width: 200px;
+    height: 30px;
+    background:#202225;
+    color: #fff;
+}
+#buttons button:nth-child(odd) {
+    margin-right: 120px;
+}

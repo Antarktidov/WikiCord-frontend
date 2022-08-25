@@ -3,6 +3,9 @@ $(document).ready(function(){
     $(".message-management-meny-link").show();
     var isLeftPanelHidden = false;
     var isRightPanelHidden = false;
+    var isFullUserProfile = false;
+    let profile = $("main").html();
+    $("main").hide();
     $(".message-management-meny-link").click(function(){
       $(".message-management-meny").toggle();
       //$(".message-management-meny").show();
@@ -22,7 +25,6 @@ $(document).ready(function(){
         $('#messages').css("left", "76px");
         $(this).css("left", "50px");
         $('.editor').css("left", "76px");
-        isLeftPanelHidden = !isLeftPanelHidden;
       } else {
         $('#channels-panel').css("width", "250px");
         $('#chat').css("left", "316px");
@@ -30,8 +32,8 @@ $(document).ready(function(){
         $('#messages').css("left", "326px");
         $(this).css("left", "306px");
         $('.editor').css("left", "326px");
-        isLeftPanelHidden = !isLeftPanelHidden;
       }
+      isLeftPanelHidden = !isLeftPanelHidden;
     });
     $('#right-panel-toggle').click(function(){
       if (!isRightPanelHidden) {
@@ -39,13 +41,20 @@ $(document).ready(function(){
         $('#chat').css("right", "0");
         $('.editor').css("right", "10px");
         $('#messages').css("right", "10px");
-        isRightPanelHidden = !isRightPanelHidden;
       } else {
         $('#right-panel').css("width", "250px");
         $('#chat').css("right", "250px");
         $('.editor').css("right", "260px");
         $('#messages').css("right", "260px");
-        isRightPanelHidden = !isRightPanelHidden;
       }
+      isRightPanelHidden = !isRightPanelHidden;
+    });
+    $('.userprofilelink').click(function(){
+      if (!isFullUserProfile) {
+        $("#fulluserprofile").html(profile);
+      } else {
+        $("#fulluserprofile").html('');
+      }
+      isFullUserProfile = !isFullUserProfile;
     });
   });
